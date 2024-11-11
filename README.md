@@ -1,4 +1,4 @@
-# Your project name here
+# Multi-modal Alzheimer's Disease Detection
 
 ## Information about this repository
 
