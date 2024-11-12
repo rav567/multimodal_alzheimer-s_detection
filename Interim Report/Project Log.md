@@ -9,8 +9,8 @@
                             A research-based project- how time directionality affects LLMs performance, Medical Imaging 
                             classification.
 |------------------------|------------------------------------------------------------------------------------------------|---------|
-    07/10/24 - 07/10/24     Details:                                                                                          R.S.G
-                            Today, I met my supervisor and discussed my project ideas. My supervisor suggested that I 
+    07/10/24 - 07/10/24    Details:                                                                                          R.S.G
+                           Today, I met my supervisor and discussed my project ideas. My supervisor suggested that I 
                             should start by understanding the nature of different projects in the field and identifying 
                             areas that resonate with my interests. We discussed my current focus on medical disease 
                             prediction and detection using deep learning, and they recommended that I explore different 
