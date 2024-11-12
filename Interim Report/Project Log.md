@@ -9,7 +9,7 @@
                             A research-based project- how time directionality affects LLMs performance, Medical Imaging 
                             classification.
 |------------------------|------------------------------------------------------------------------------------------------|---------|
-    07/10/24 - 07/10/24     Details:
+    07/10/24 - 07/10/24     Details:                                                                                          R.S.G
                             Today, I met my supervisor and discussed my project ideas. My supervisor suggested that I 
                             should start by understanding the nature of different projects in the field and identifying 
                             areas that resonate with my interests. We discussed my current focus on medical disease 
@@ -18,7 +18,6 @@
                             review more research papers, especially those presented at relevant conferences, to gain a 
                             deeper understanding of the potential projects I could pursue. The meeting was concluded, with 
                             my main task to research conference papers about potential ideas for the project I may have.
-
                             Next Steps:
                             •	Review conference papers on deep learning and medical disease prediction from major 
                             conferences
