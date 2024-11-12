@@ -23,7 +23,6 @@
                             conferences
                             •	Expand the list of medical diseases of interest and examine existing deep learning 
                             approaches used in these areas.
-
                             Challenges:
                             •	Narrowing down project ideas to a specific and manageable focus, given the vast range of 
                             medical applications and deep learning techniques.
