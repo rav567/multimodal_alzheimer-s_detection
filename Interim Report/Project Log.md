@@ -19,17 +19,17 @@
                             deeper understanding of the potential projects I could pursue. The meeting was concluded, with 
                             my main task to research conference papers about potential ideas for the project I may have.
                             Next Steps:
-                            •	Review conference papers on deep learning and medical disease prediction from major 
-                            conferences
-                            •	Expand the list of medical diseases of interest and examine existing deep learning 
-                            approaches used in these areas.
+                                •	Review conference papers on deep learning and medical disease prediction from major 
+                                    conferences
+                                •	Expand the list of medical diseases of interest and examine existing deep learning 
+                                    approaches used in these areas.
                             Challenges:
-                            •	Narrowing down project ideas to a specific and manageable focus, given the vast range of 
-                            medical applications and deep learning techniques.
-                            •	Finding high-quality, accessible datasets that can be used for training models in the
-                            selected disease areas.
+                                •	Narrowing down project ideas to a specific and manageable focus, given the vast range of 
+                                    medical applications and deep learning techniques.
+                                •	Finding high-quality, accessible datasets that can be used for training models in the
+                                    selected disease areas.
 
 
-|------------------------|--------------------------------------------------------------------------------------------------|-------------|
+|------------------------|-----------------------------------------------------------------------------------------------|---------|
 
 
