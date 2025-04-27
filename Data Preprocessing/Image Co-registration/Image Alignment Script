@@ -1,0 +1,93 @@
+#!/bin/bash
+
+# Enable nullglob so unmatched globs expand to nothing
+shopt -s nullglob
+
+# Base directory containing intensity-normalised images
+BASE_DIR="INTENNORM2"
+
+
+MRI_AD_DIR="${BASE_DIR}/resampled_mri_ad_intenorm"          # Directory for MRI AD images
+PET_AD_DIR="${BASE_DIR}/resampled_pet_ad_intenorm"          # Directory for PET AD images
+OUT_PET_AD_DIR="${BASE_DIR}/registered_pet_ad_intenorm"     # Output directory for registered PET AD images
+
+# Create output directory if it does not exist
+mkdir -p "$OUT_PET_AD_DIR"
+
+echo "Processing Alzheimer's Disease (AD) group..."
+
+# Find all PET AD files
+pet_ad_files=("$PET_AD_DIR"/normalised_resampled_pet_ad_*.nii)
+echo "Found ${#pet_ad_files[@]} PET AD file(s) in $PET_AD_DIR."
+
+# Loop over each PET file
+for pet_file in "${pet_ad_files[@]}"; do
+    base=$(basename "$pet_file")
+    pet_index=$(echo "$base" | sed -E 's/^normalised_resampled_pet_ad_([0-9]+).*/\1/')
+
+    if [ -z "$pet_index" ]; then
+        echo "Skipping $base: unable to extract index."
+        continue
+    fi
+
+    # Construct the corresponding MRI filename
+    MRI_FILE="${MRI_AD_DIR}/normalised_resampled_mri_ad_${pet_index}_brain.nii.gz"
+
+    if [ ! -f "$MRI_FILE" ]; then
+        echo "MRI file $MRI_FILE not found for PET file $pet_file. Skipping."
+        continue
+    fi
+
+    # Output filenames for registered PET image and transformation matrix
+    OUT_FILE="${OUT_PET_AD_DIR}/registered_pet_ad_${pet_index}.nii.gz"
+    MATFILE="${OUT_PET_AD_DIR}/pet2mri_${pet_index}.mat"
+
+    # Perform rigid-body registration (6 DOF) using FLIRT
+    flirt -in "$pet_file" -ref "$MRI_FILE" -out "$OUT_FILE" -omat "$MATFILE" -dof 6
+
+    echo "Registered PET AD file $base -> $OUT_FILE"
+done
+
+
+MRI_CN_DIR="${BASE_DIR}/resampled_mri_cn_intenorm"          # Directory for MRI CN images
+PET_CN_DIR="${BASE_DIR}/resampled_pet_cn_intenorm"          # Directory for PET CN images
+OUT_PET_CN_DIR="${BASE_DIR}/registered_pet_cn_intenorm"     # Output directory for registered PET CN images
+
+# Create output directory if it does not exist
+mkdir -p "$OUT_PET_CN_DIR"
+
+echo "Processing Cognitive Normal (CN) group..."
+
+# Find all PET CN files
+pet_cn_files=("$PET_CN_DIR"/normalised_resampled_pet_cn_*.nii)
+echo "Found ${#pet_cn_files[@]} PET CN file(s) in $PET_CN_DIR."
+
+# Loop over each PET file
+for pet_file in "${pet_cn_files[@]}"; do
+    base=$(basename "$pet_file")
+    pet_index=$(echo "$base" | sed -E 's/^normalised_resampled_pet_cn_([0-9]+).*/\1/')
+
+    if [ -z "$pet_index" ]; then
+        echo "Skipping $base: unable to extract index."
+        continue
+    fi
+
+    # Construct the corresponding MRI filename
+    MRI_FILE="${MRI_CN_DIR}/normalised_resampled_mri_cn_${pet_index}_brain.nii.gz"
+
+    if [ ! -f "$MRI_FILE" ]; then
+        echo "MRI file $MRI_FILE not found for PET file $pet_file. Skipping."
+        continue
+    fi
+
+    # Output filenames for registered PET image and transformation matrix
+    OUT_FILE="${OUT_PET_CN_DIR}/registered_pet_cn_${pet_index}.nii.gz"
+    MATFILE="${OUT_PET_CN_DIR}/pet2mri_${pet_index}.mat"
+
+    # Perform rigid-body registration (6 DOF) using FLIRT
+    flirt -in "$pet_file" -ref "$MRI_FILE" -out "$OUT_FILE" -omat "$MATFILE" -dof 6
+
+    echo "Registered PET CN file $base -> $OUT_FILE"
+done
+
+echo "Registration complete for both AD and CN groups."
