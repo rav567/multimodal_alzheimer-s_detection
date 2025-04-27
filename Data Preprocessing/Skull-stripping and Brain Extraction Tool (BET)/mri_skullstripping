@@ -1,0 +1,17 @@
+# Loop over all resampled MRI AD files
+for file in resampled_mri_ad_*.nii; do
+    # Extract the base filename without the .nii extension
+    base=$(basename "$file" .nii)
+    
+    # Define output filename for skull-stripped brain image
+    output_brain="$HOME/brain_project/${base}_brain.nii.gz"
+    
+    # Print processing message
+    echo "Processing $file → $output_brain"
+    
+    # Perform skull stripping using FSL BET tool
+    # -f 0.5 sets fractional intensity threshold
+    # -g 0 applies no vertical gradient
+    # -m generates a brain mask alongside the brain image
+    bet "$file" "$output_brain" -f 0.5 -g 0 -m
+done
