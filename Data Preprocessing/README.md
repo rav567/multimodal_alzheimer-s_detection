@@ -18,32 +18,32 @@ This project standardises and prepares MRI and PET scans for deep learning-based
 - Extraction script run via WSL Ubuntu environment.
 
 
-3. Intensity Normalisation
+3. _Intensity Normalisation_
 - Normalised MRI and PET intensity distributions to standardise dynamic ranges across subjects.
 - Verified successful normalisation via histogram analysis.
 
 
-4. Quality Assurance
+4. _Quality Assurance_
 - Visual inspection of normalised images confirmed tissue contrasts and intensity range consistency.
 - No major artefacts or anomalies detected.
 
 
-5. Co-registration
+5. _Co-registration_
 - PET scans were aligned (registered) to corresponding MRI scans using FSL FLIRT (rigid-body registration).
 - Registration ensures voxel-level anatomical correspondence across modalities.
 - Alignment verified through  visual overlays (validated, no further registration required).
 
-6. Noise Reduction
+6. _Noise Reduction_
 - Applied SUSAN noise reduction on MRI scans to enhance tissue boundary clarity and suppress low-signal noise.
 
-7. Data Augmentation
+7. _Data Augmentation_
 - Increased dataset size via:
 - Random rotations (±10–15°)
 - Random left-right flipping
 - Random scaling (0.9× to 1.1×)
 - Each original MRI-PET pair generated one augmented pair.
 
-8. Final Quality Control
+8. _Final Quality Control_
 - Verified that augmented images differed appropriately.
 - Adjusted voxel shape and size post-augmentation for consistency with original preprocessed data.
 
