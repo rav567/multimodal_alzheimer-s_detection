@@ -1,0 +1,59 @@
+# Dataset Summary Report
+========================================
+
+## 1. Overview
+Total number of records: 342
+
+Distribution by Group:
+- CN: 158 (46.2%)
+- AD: 144 (42.1%)
+- SMC: 40 (11.7%)
+
+Distribution by Modality:
+- MRI: 171 (50.0%)
+- PET: 171 (50.0%)
+
+## 2. Subject Information
+
+Unique subjects by Group:
+- AD: 72
+- CN: 79
+- SMC: 20
+
+Age statistics by Group:
+- AD: n=144, Mean=74.2 ± 8.5, Range=56.0-92.0
+- CN: n=158, Mean=76.2 ± 7.6, Range=60.0-95.0
+- SMC: n=40, Mean=75.1 ± 6.7, Range=65.0-90.0
+
+Sex distribution by Group:
+- AD: F: 62 (43.1%), M: 82 (56.9%)
+- CN: F: 86 (54.4%), M: 72 (45.6%)
+- SMC: F: 28 (70.0%), M: 12 (30.0%)
+
+## 3. Image Information
+
+Image count by category:
+- AD, Coregistered, Coreg: 144
+- AD, MRI, Augmented: 72
+- AD, MRI, Original: 72
+- AD, PET, Augmented: 72
+- AD, PET, Original: 72
+- CN, Coregistered, Coreg: 198
+- CN, MRI, Augmented: 99
+- CN, MRI, Original: 99
+- CN, PET, Augmented: 99
+- CN, PET, Original: 99
+
+Total images by Group:
+- AD: 432
+- CN: 594
+
+Total images by Modality:
+- Coregistered: 342
+- MRI: 342
+- PET: 342
+
+Total images by Type:
+- Augmented: 342
+- Coreg: 342
+- Original: 342
