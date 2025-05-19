@@ -37,7 +37,7 @@ Ensure the following are installed:
 
 ## How to Run
 
-# Front end with Server
+# Diagnostic interface with Flask Backend Server
 1. **Download the Project**
 
    - Extract the ZIP file backend_server_code.zip to your preferred location from this source: Front End/Server
