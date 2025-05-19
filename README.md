@@ -38,8 +38,6 @@ Ensure the following are installed:
 ## How to Run
 
 # Front end with Server
-1. 
-
 1. **Download the Project**
 
    - Extract the ZIP file backend_server_code.zip to your preferred location from this source: Front End/Server
