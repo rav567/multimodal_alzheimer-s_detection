@@ -36,12 +36,7 @@ Ensure the following are installed:
 
 ### Installation
 
-1. Clone the repository:
-
-```bash
-git clone https://gitlab.com/yourusername/cerebroiq.git
-cd cerebroiq
-```
+1. Running
 
 
 3. Install Python dependencies:
@@ -56,8 +51,54 @@ pip install -r requirements.txt
 
 ## How to Run
 
+# Deep Learning Model (Google Colab)
+1. **Create a folder** named `Final_Dataset1` in your Google Drive.
 
-# here write how to 
+2. **Add the following subfolders** containing `.nii.gz` files:
+
+original_mri_ad/
+original_mri_cn/
+augmented_mri_ad/
+augmented_mri_cn/
+original_pet_ad/
+original_pet_cn/
+augmented_pet_ad/
+augmented_pet_cn/
+coreg_ad_original/
+coreg_ad_augmented/
+coreg_cn_original/
+coreg_cn_augmented/
+
+
+3. **Open** `THE_3D_CNN_LATE_FUSION_MODEL.ipynb` in [Google Colab](https://colab.research.google.com).
+
+4. **Mount Google Drive**  
+In the first cell, run:
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+
+
+5. pip install torch==2.2.2 nibabel==5.2.1 scikit-learn==1.4.2 pandas==2.2.2 tqdm==4.66.2 numpy==1.26.4
+
+6. Run all cells from top to bottom to train, evaluate, and perform late fusion.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Front end with Server
+1. 
 
 
 ## Features
