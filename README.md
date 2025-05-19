@@ -125,7 +125,7 @@ drive.mount('/content/drive')
 
 * Independent 3D CNN models for MRI, PET, and co-registered inputs
 * Weighted late fusion using calibrated ensemble (RandomForestClassifier)
-* REST API with JSON response
+* REST API
 * JSP interface for clinicians to upload scans and view results
 * Probability calibration to reduce overconfidence
 * Integrated visual interface with AI-generated branding
