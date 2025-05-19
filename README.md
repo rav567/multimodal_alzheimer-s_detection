@@ -34,22 +34,58 @@ Ensure the following are installed:
 * Google Colab or suitable GPU environment
 * Git
 
-### Installation
-
-1. Running
-
-
-3. Install Python dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Set up the Java Spring Boot frontend (open in IntelliJ and configure application.properties).
-
----
 
 ## How to Run
+
+# Front end with Server
+1. 
+
+1. **Download the Project**
+
+   - Extract the ZIP file backend_server_code.zip to your preferred location from this source: Front End/Server
+
+2. **Set Up the Python Prediction Server**
+
+   - Open a terminal and navigate to the server directory (where `predict_server.py` is located).
+   - Make sure Python is installed on your system.
+   - Install the required Python packages:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+   - Start the Flask prediction server:
+     ```bash
+     python predict_server.py
+     ```
+
+   - The server will run on `http://127.0.0.1:5000`.
+
+3. **Set Up the Spring Boot Frontend**
+
+   - Open the `AD_DETECT_Frontend` folder in IntelliJ IDEA from this source: Front End/Final Front End Code/AD_DETECT_Frontend.zip.
+   - Ensure Gradle is synced.
+   - Run the application via `AdDetectFrontendApplication.java`.
+   - The frontend will be available at:
+     ```
+     http://localhost:8080
+     ```
+
+4. **Run the Full System**
+
+   - Make sure both the **Flask server** and **Spring Boot app** are running.
+   - Open `http://localhost:8080` in your browser.
+   - Upload a `.nii.gz` brain scan and enter a Patient ID.
+   - Click **Submit** to analyse the scan.
+   - View results (prediction, confidence score) on the results page.
+
+5. **File Upload Notes**
+
+   - Only `.nii.gz` files are accepted.
+   - Maximum upload size is set to 100MB.
+
+
+
+
 
 # Deep Learning Model (Google Colab)
 1. **Create a folder** named `Final_Dataset1` in your Google Drive.
@@ -87,21 +123,6 @@ drive.mount('/content/drive')
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-# Front end with Server
-1. 
-
-
 ## Features
 
 * Independent 3D CNN models for MRI, PET, and co-registered inputs
@@ -131,4 +152,3 @@ This repository is currently shared for academic use only.
 
 **Author:** \[Ravpreet Singh Gill]
 **Email:** [ravpreet.s.gill@gmail.com]
-**GitLab:** [https://gitlab.com/yourusername/cerebroiq]
