@@ -120,9 +120,9 @@ drive.mount('/content/drive')
 
 ## Final Code Locations
 
-**- 3D CNN LATE FUSION MODEL = Model/Final Model/THE_3D_CNN_LATE_FUSION_MODEL.ipynb
+- 3D CNN LATE FUSION MODEL = Model/Final Model/THE_3D_CNN_LATE_FUSION_MODEL.ipynb
 - FRONT END INTELLIJ UI = Front End/Final Front End Code/AD_DETECT_Frontend.zip
-- FRONT END MODEL FLASK SERVER = Front End/Server/backend_server_code.zip**
+- FRONT END MODEL FLASK SERVER = Front End/Server/backend_server_code.zip
 
 
 
