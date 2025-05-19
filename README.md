@@ -77,6 +77,7 @@ In the first cell, run:
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
+```
 
 
 5. pip install torch==2.2.2 nibabel==5.2.1 scikit-learn==1.4.2 pandas==2.2.2 tqdm==4.66.2 numpy==1.26.4
