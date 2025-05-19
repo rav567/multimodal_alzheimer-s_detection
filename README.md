@@ -4,7 +4,7 @@
 
 CerebroIQ is a deep learning based diagnostic framework that leverages MRI, PET, and co-registered brain scans to predict Alzheimer's Disease. It uses independent 3D CNN models for each imaging modality, combining them using a calibrated late fusion strategy to enhance diagnostic accuracy. The project also includes a full stack medical web interface for scan uploads and predictions.
 
-> **Note:** The website logo and the name "CerebroIQ" were generated using AI tools (ChatGPT 4.0 and DALL·E). The Flask server script used to run the backend model was also AI-assisted. In addition thorough code checks were conducted too.
+> **Note:** The website logo and the name "CerebroIQ" were generated using AI tools (ChatGPT 4.0 and DALL·E). The Flask server script used to run the backend model was also AI-assisted.
 
 ---
 
