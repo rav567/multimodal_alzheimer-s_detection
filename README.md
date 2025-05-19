@@ -22,7 +22,7 @@ CerebroIQ is a platform to help predict Alzheimer's Disease. It is a a deep lear
 
 ## Getting Started
 
-These instructions will help you set up and run the complete CerebroIQ system on your local machine.
+These instructions will help you set up and run the complete CerebroIQ system on your local machine and also run the model code too on Google Colab.
 
 ### Prerequisites
 
