@@ -118,11 +118,12 @@ drive.mount('/content/drive')
 
 6. Run all cells from top to bottom to train, evaluate, and perform late fusion.
 
-## Final Code Locations
+## Final Code Locations and Project Log
 
 - 3D CNN LATE FUSION MODEL = Model/Final Model/THE_3D_CNN_LATE_FUSION_MODEL.ipynb
 - FRONT END INTELLIJ UI = Front End/Final Front End Code/AD_DETECT_Frontend.zip
 - FRONT END MODEL FLASK SERVER = Front End/Server/backend_server_code.zip
+- PROJECT LOG = Interim Report/ Project Log.md
 
 
 
