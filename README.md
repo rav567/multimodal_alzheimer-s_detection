@@ -43,12 +43,6 @@ git clone https://gitlab.com/yourusername/cerebroiq.git
 cd cerebroiq
 ```
 
-2. (Optional) Set up virtual environment:
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use venv\Scripts\activate
-```
 
 3. Install Python dependencies:
 
